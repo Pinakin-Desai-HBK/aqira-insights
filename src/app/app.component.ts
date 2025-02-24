@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { ReactComponentDirective } from '../app-react/react-component.directive';
 import MyReactComponent from '../app-react/components/hello-react-world';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClient } from '@angular/common/http';
 
-interface Food {
-  value: string;
-  viewValue: string;
+interface CsvFiles {
+  name: string;
 }
 
 @Component({
@@ -21,8 +21,8 @@ interface Food {
       <h4>File</h4>
       <mat-form-field>
         <mat-select [(value)]="selected" (valueChange)="onChange($event)">
-          @for (food of foods; track food) {
-          <mat-option [value]="food.value">{{ food.viewValue }}</mat-option>
+          @for (file of csvFiles; track file) {
+          <mat-option [value]="file.name">{{ file.name }}</mat-option>
           }
         </mat-select>
       </mat-form-field>
@@ -34,24 +34,32 @@ interface Food {
     </main>
   `,
 })
+@Injectable({ providedIn: 'root' })
 export class AppComponent {
   title = 'aqira-insights';
-  MyReactComponent = MyReactComponent;
-  foods: Food[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' },
-  ];
-  selected = 'steak-0';
 
-  props = {
-    selected: this.selected,
-  };
+  MyReactComponent = MyReactComponent;
+
+  csvFiles: CsvFiles[] = [
+    { name: '3StrainChans_Hist.csv' },
+    { name: 'complex_input1.csv' },
+    { name: 'MonitoringData.csv' },
+  ];
+  selected = this.csvFiles[0].name;
+
+  props = { data: '' };
+
+  private httpClient: HttpClient;
+
+  constructor(http: HttpClient) {
+    this.httpClient = http;
+  }
 
   onChange(event: any) {
-    this.props = {
-      ...this.props,
-      selected: event,
-    };
+    this.httpClient
+      .get(`files/${event}`, { responseType: 'text' })
+      .subscribe((data) => {
+        this.props = { ...this.props, data };
+      });
   }
 }
