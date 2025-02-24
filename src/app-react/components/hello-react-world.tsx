@@ -1,4 +1,4 @@
-const MyReactComponent = () => {
+const MyReactComponent = ({ selected }: { selected: string }) => {
   return (
     <div
       style={{
@@ -10,6 +10,7 @@ const MyReactComponent = () => {
       }}
     >
       <h1>React</h1>
+      {selected}
     </div>
   );
 };

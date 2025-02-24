@@ -20,14 +20,17 @@ interface Food {
 
       <h4>File</h4>
       <mat-form-field>
-        <mat-select>
+        <mat-select [(value)]="selected" (valueChange)="onChange($event)">
           @for (food of foods; track food) {
           <mat-option [value]="food.value">{{ food.viewValue }}</mat-option>
           }
         </mat-select>
       </mat-form-field>
 
-      <div [reactComponent]="MyReactComponent"></div>
+      <div
+        [reactComponent]="MyReactComponent"
+        [reactComponentProps]="props"
+      ></div>
     </main>
   `,
 })
@@ -39,4 +42,16 @@ export class AppComponent {
     { value: 'pizza-1', viewValue: 'Pizza' },
     { value: 'tacos-2', viewValue: 'Tacos' },
   ];
+  selected = 'steak-0';
+
+  props = {
+    selected: this.selected,
+  };
+
+  onChange(event: any) {
+    this.props = {
+      ...this.props,
+      selected: event,
+    };
+  }
 }
