@@ -41,25 +41,30 @@ export class AppComponent {
   MyReactComponent = MyReactComponent;
 
   csvFiles: CsvFiles[] = [
-    { name: '3StrainChans_Hist.csv' },
     { name: 'complex_input1.csv' },
     { name: 'MonitoringData.csv' },
   ];
   selected = this.csvFiles[0].name;
 
-  props = { data: '' };
+  props = { csvData: '' };
 
   private httpClient: HttpClient;
 
+  private setCSVData(name: string) {
+    this.httpClient
+      .get(`files/${name}`, { responseType: 'text' })
+      .subscribe((csvData) => {
+        this.props = { ...this.props, csvData };
+      });
+  }
+
   constructor(http: HttpClient) {
     this.httpClient = http;
+
+    this.setCSVData(this.csvFiles[0].name);
   }
 
   onChange(event: any) {
-    this.httpClient
-      .get(`files/${event}`, { responseType: 'text' })
-      .subscribe((data) => {
-        this.props = { ...this.props, data };
-      });
+    this.setCSVData(event);
   }
 }
