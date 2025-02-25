@@ -2,25 +2,18 @@ import { useEffect, useState } from "react";
 import Papa from "papaparse";
 import { DataGrid, GridRowsProp, GridColDef } from "@mui/x-data-grid";
 
-// const rows: GridRowsProp = [
-//   { id: 1, col1: "Hello", col2: "World" },
-//   { id: 2, col1: "DataGridPro", col2: "is Awesome" },
-//   { id: 3, col1: "MUI", col2: "is Amazing" },
-// ];
-
-// const columns: GridColDef[] = [
-//   { field: "col1", headerName: "Column 1", width: 150 },
-//   { field: "col2", headerName: "Column 2", width: 150 },
-// ];
-
-const MyReactComponent = ({ csvData }: { csvData: string }) => {
-  const [tableData, setTableData] = useState<string[][]>([]);
+const MyReactComponent = ({
+  csvData,
+  onCellClick,
+}: {
+  csvData: string;
+  onCellClick: (value: string) => void;
+}) => {
   const [columns, setColumns] = useState<GridColDef[]>([]);
   const [rows, setRows] = useState<GridRowsProp>([]);
 
   useEffect(() => {
     if (!csvData) return;
-    console.log(Papa.parse(csvData).data);
     const parsedData = Papa.parse(csvData).data as string[][];
 
     // Columns
@@ -62,7 +55,11 @@ const MyReactComponent = ({ csvData }: { csvData: string }) => {
     >
       <h1>React</h1>
       <div style={{ height: 300, width: "100%" }}>
-        <DataGrid rows={rows} columns={columns} />
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          onCellClick={(event) => onCellClick(event.value as string)}
+        />
       </div>
     </div>
   );

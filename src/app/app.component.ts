@@ -4,6 +4,7 @@ import MyReactComponent from '../app-react/components/hello-react-world';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 interface CsvFiles {
   name: string;
@@ -11,7 +12,12 @@ interface CsvFiles {
 
 @Component({
   selector: 'app-root',
-  imports: [ReactComponentDirective, MatFormFieldModule, MatSelectModule],
+  imports: [
+    CommonModule,
+    ReactComponentDirective,
+    MatFormFieldModule,
+    MatSelectModule,
+  ],
   template: `
     <main
       style="padding: 20px; margin: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;"
@@ -26,6 +32,9 @@ interface CsvFiles {
           }
         </mat-select>
       </mat-form-field>
+      <div>
+        <h4>Selected cell: {{ cellValue }}</h4>
+      </div>
 
       <div
         [reactComponent]="MyReactComponent"
@@ -46,7 +55,12 @@ export class AppComponent {
   ];
   selected = this.csvFiles[0].name;
 
-  props = { csvData: '' };
+  cellValue = '';
+
+  props = {
+    csvData: '',
+    onCellClick: (value: string) => (this.cellValue = value),
+  };
 
   private httpClient: HttpClient;
 
@@ -65,6 +79,7 @@ export class AppComponent {
   }
 
   onChange(event: any) {
+    this.cellValue = '';
     this.setCSVData(event);
   }
 }
