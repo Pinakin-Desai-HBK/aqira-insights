@@ -1,7 +1,7 @@
-import { Component, ElementRef, inject, Injectable } from '@angular/core';
+import { Component, ElementRef, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgReact } from '../app-react/ng-context';
-import App from '../app-react/App';
+import { NgReact } from '../ng-context';
+import App from '../App';
 
 @Component({
   selector: 'app-react-container',

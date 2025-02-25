@@ -1,5 +1,5 @@
 import { Component, Injectable } from '@angular/core';
-import { ReactComponentDirective } from '../app-react/react-component.directive';
+import { ReactComponentDirective } from '../react-component.directive';
 import MyReactComponent from '../app-react/components/hello-react-world';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -28,7 +28,7 @@ interface CsvFiles {
       <mat-form-field>
         <mat-select [(value)]="selected" (valueChange)="onChange($event)">
           @for (file of csvFiles; track file) {
-          <mat-option [value]="file.name">{{ file.name }}</mat-option>
+            <mat-option [value]="file.name">{{ file.name }}</mat-option>
           }
         </mat-select>
       </mat-form-field>
