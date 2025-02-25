@@ -1,9 +1,9 @@
 import { memo, useContext } from "react";
-import { Box } from "@mui/material";
 import styles from "./RenderVisualizationComponent.module.css";
 import { useConnectVisualization } from "../../hooks/useConnectVisualization";
 import { VisualizationDetailsContext } from "../../context/VisualizationDetailsContext";
 import { JSX } from "react";
+import Box from "@mui/material/Box";
 
 export const RenderVisualizationComponent = memo(
   (props: { children: JSX.Element; show: boolean; errorMessage: string | null; visTypeName: string }) => {

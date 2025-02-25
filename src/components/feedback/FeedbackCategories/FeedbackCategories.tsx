@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid2";
+import useTheme from "@mui/material/styles/useTheme";
 import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material";
 import { memo } from "react";
 import { appLabels } from "src/consts/labels";
 import { FeedbackCategoriesProps } from "src/redux/types/ui/feedback";

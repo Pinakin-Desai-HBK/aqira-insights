@@ -1,7 +1,9 @@
 import BaseDialog from "../support/BaseDialog";
-import { Box, Stack, useTheme } from "@mui/material";
 import AboutPanelAccordion from "../../about-dialog/about-dialog-parts/AboutPanelAccordion";
 import { InformationDialogParams, InformationItemContent } from "src/redux/types/ui/dialogs";
+import useTheme from "@mui/material/styles/useTheme";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 
 const InformationDialogContents = ({ content }: { content: InformationItemContent<number> }) => {
   const theme = useTheme().palette.properties;

@@ -1,8 +1,10 @@
-import { Grid, Typography, useTheme } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import AboutPanelAccordion from "./AboutPanelAccordion";
 import React from "react";
 import { VersionsData } from "src/redux/types/schemas/about";
 import { SoftwareVersionSectionProps } from "src/redux/types/ui/aboutPanel";
+import useTheme from "@mui/material/styles/useTheme";
+import Typography from "@mui/material/Typography";
 
 const SoftwareVersionSection = ({
   releaseFromApi,
@@ -33,12 +35,12 @@ const SoftwareVersionSection = ({
           {versions.length > 0 ? (
             versions.map((version, index) => (
               <React.Fragment key={index}>
-                <Grid item xs={6}>
+                <Grid size={6}>
                   <Typography marginLeft={1} fontSize="small">
                     {version.label}
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid size={6}>
                   <Typography marginLeft={1} fontSize="small">
                     {version.version}
                   </Typography>

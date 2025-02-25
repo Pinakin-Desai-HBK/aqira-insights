@@ -2,8 +2,8 @@ import { Mock, describe, expect, it, vi } from "vitest";
 import { FileBrowserAddressBar } from "./FileBrowserAddressBar";
 import { mockNavigationPaneData } from "../../../../../vite-test/mock-data/mock-navigation-pane-tree-data";
 import { fireEvent, render, screen } from "@testing-library/react";
-import { ThemeProvider } from "@mui/material";
 import { themeAILight } from "../../../../redux/types/ui/themes";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 
 const doRender = (): { container: HTMLElement; handleNewPath: Mock; handlePathPartSelection: Mock } => {
   const handlePathPartSelection = vi.fn();

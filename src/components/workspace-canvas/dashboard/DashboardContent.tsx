@@ -7,7 +7,6 @@ import ReactFlow, {
   useKeyPress
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { useTheme } from "@mui/material";
 import useDashboardVisualizations from "./useDashboardVisualizations";
 import { DragAndDropDataFormat } from "../../../enums/enums";
 import DashboardCanvasCustomControls from "./custom-controls/DashboardCanvasCustomControls";
@@ -40,6 +39,7 @@ import { getTypeDiscriminator, getValue } from "src/components/properties/proper
 import { useUpdatePropertyMutation } from "src/redux/api/appApi";
 import { selectStore_UI_DataPanel_DragAndDrop } from "src/redux/slices/ui/dataPanel/dataPanelSlice";
 import { useRepositionView } from "../shared/useRepositionView";
+import useTheme from "@mui/material/styles/useTheme";
 
 const getDataValue = (event: React.DragEvent<HTMLDivElement>) => {
   const hasFileDataType = event.dataTransfer.types.includes(DragAndDropDataFormat.Data);

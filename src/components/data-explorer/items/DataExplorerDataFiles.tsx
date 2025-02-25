@@ -8,12 +8,12 @@ import { DataGroup } from "../group/DataGroup";
 import { useDataItemActions } from "../group/useDataItemActions";
 import { useAppSelector } from "src/redux/hooks/hooks";
 import { make_selectStore_UI_DataPanel_ForDataFiles } from "src/redux/slices/ui/dataPanel/combinedSelectors";
-import { useTheme } from "@mui/material";
 import { DataExplorerOptionButton } from "../options/DataExplorerOptionButton";
 import FolderIcon from "@mui/icons-material/Folder";
 import { appLabels } from "src/consts/labels";
 import useDataExplorer from "../useDataExplorer";
 import { EmptySVG } from "./EmptySVG";
+import useTheme from "@mui/material/styles/useTheme";
 
 const enableContextMenu = false;
 

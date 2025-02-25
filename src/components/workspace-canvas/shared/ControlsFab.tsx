@@ -1,4 +1,5 @@
-import { Fab, FabOwnProps, Tooltip } from "@mui/material";
+import Fab, { FabOwnProps } from "@mui/material/Fab";
+import Tooltip from "@mui/material/Tooltip";
 
 export const ControlsFab = ({
   onClick,

@@ -1,5 +1,6 @@
-import { Box, Button } from "@mui/material";
-import { GridPagination } from "@mui/x-data-grid";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import { GridPagination } from "@mui/x-data-grid/components/GridPagination";
 import { useClearLogMessagesMutation } from "src/redux/api/appApi";
 import { useAppSelector } from "src/redux/hooks/hooks";
 import { selectStore_UI_LogPanel_LogMessages } from "src/redux/slices/ui/logPanel/logPanelSlice";

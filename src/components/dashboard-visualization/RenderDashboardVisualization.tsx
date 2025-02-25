@@ -8,13 +8,14 @@ import { useAppSelector } from "src/redux/hooks/hooks";
 import { useWorkspaceItemDimensions } from "src/redux/hooks/useWorkspaceItemDimensions";
 import { selectStore_UI_DataPanel_DragAndDrop } from "src/redux/slices/ui/dataPanel/dataPanelSlice";
 import { useResizeVisualization } from "./hooks/useResizeVisualization";
-import { Box, useTheme } from "@mui/material";
 import { isDataVisualization } from "./utils/isDataVisualization";
 import "./ResizeStyles.css";
 import { make_selectStore_UI_Workspace_ForDashboardVisualizations } from "src/redux/slices/ui/workspace/combinedSelectors";
 import { VisualizationDetailsContext } from "./context/VisualizationDetailsContext";
 import { MappedDashboardVisualization } from "./MappedDashboardVisualization";
 import { selectStore_UI_Workspace_Selecting } from "src/redux/slices/ui/workspace/workspaceSlice";
+import Box from "@mui/material/Box";
+import useTheme from "@mui/material/styles/useTheme";
 
 export const RenderDashboardVisualization = ({ id, data }: NodeProps<DashboardVisualizationDataUI>) => {
   const { type } = data;

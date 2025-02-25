@@ -1,4 +1,5 @@
-import { Checkbox, Typography } from "@mui/material";
+import Checkbox from "@mui/material/Checkbox";
+import Typography from "@mui/material/Typography";
 import { memo, useEffect, useRef } from "react";
 import { DialogCheckboxProps } from "src/redux/types/ui/dialogs";
 

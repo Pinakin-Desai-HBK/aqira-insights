@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import { usePropertyUtils } from "./usePropertyUtils";
 import { useMemo } from "react";
 import { Property } from "src/redux/types/schemas/properties";

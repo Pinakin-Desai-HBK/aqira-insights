@@ -1,5 +1,4 @@
 import styles from "../Palette.module.css";
-import { useTheme } from "@mui/material";
 import PaletteGroupIcon from "./PaletteGroupIcon";
 import PaletteItem from "../items/PaletteItem";
 import { memo, useContext } from "react";
@@ -8,6 +7,7 @@ import AccordionGroup from "src/components/accordion-group/AccordionGroup";
 import Grid from "@mui/material/Grid2";
 import { PaletteItemData } from "src/redux/types/ui/palette";
 import { appLabels } from "src/consts/labels";
+import useTheme from "@mui/material/styles/useTheme";
 
 const renderGroupHeading = (name: string, groupColour: string) => (
   <>

@@ -1,6 +1,6 @@
-import { Box, Fade, Snackbar, SxProps, Typography } from "@mui/material";
 import { memo, SyntheticEvent, useCallback, useEffect, useMemo } from "react";
-import { Close, Info } from "@mui/icons-material";
+import Close from "@mui/icons-material/Close";
+import Info from "@mui/icons-material/Info";
 import { TransitionComponent } from "src/redux/types/ui/toast";
 import { TOAST_DELAY, TOAST_REDUCED_DELAY } from "../../consts/consts";
 import "./Toast.css";
@@ -8,6 +8,11 @@ import { selectStore_UI_Toast, uiToast_removeFirst } from "src/redux/slices/ui/t
 import { useAppDispatch, useAppSelector } from "src/redux/hooks/hooks";
 import { ToastIconLookup } from "./ToastContent";
 import { useToastManager } from "./useToastManager";
+import Snackbar from "@mui/material/Snackbar";
+import Box from "@mui/material/Box";
+import Fade from "@mui/material/Fade";
+import Typography from "@mui/material/Typography";
+import { SxProps } from "@mui/material/styles";
 
 export const Toast = memo(({ sx, toastKey }: { sx: SxProps; toastKey: string }) => {
   const appDispatch = useAppDispatch();

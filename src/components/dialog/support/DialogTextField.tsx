@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import TextField from "@mui/material/TextField";
 import { memo, useEffect, useRef } from "react";
 import { DialogTextFieldProps } from "src/redux/types/ui/dialogs";
 

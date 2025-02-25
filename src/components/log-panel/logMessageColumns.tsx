@@ -3,11 +3,11 @@ import ErrorIcon from "@mui/icons-material/Error";
 import WarningIcon from "@mui/icons-material/Warning";
 import InfoIcon from "@mui/icons-material/Info";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
-import { Tooltip } from "@mui/material";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import dayjs from "dayjs";
 import { CommonDateOperatorDetails } from "./CommonDateOperatorDetails";
 import { LogMessage, LogMessageLevel } from "src/redux/types/schemas/logMessage";
+import Tooltip from "@mui/material/Tooltip";
 
 const iconSx = { width: "20px", height: "20px" };
 

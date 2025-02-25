@@ -1,6 +1,10 @@
 import { useReactFlow } from "reactflow";
-import { CenterFocusStrong, PlayArrow, Stop, ZoomIn, ZoomOut } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import CenterFocusStrong from "@mui/icons-material/CenterFocusStrong";
+import PlayArrow from "@mui/icons-material/PlayArrow";
+import Stop from "@mui/icons-material/Stop";
+import ZoomIn from "@mui/icons-material/ZoomIn";
+import ZoomOut from "@mui/icons-material/ZoomOut";
+import Box from "@mui/material/Box";
 import { memo } from "react";
 import { useExecutionControls } from "./useExecutionControls";
 import { ControlsFab } from "../../shared/ControlsFab";

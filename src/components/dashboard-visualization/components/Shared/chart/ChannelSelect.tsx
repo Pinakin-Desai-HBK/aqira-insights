@@ -1,5 +1,3 @@
-import { Box, IconButton, MenuItem } from "@mui/material";
-import { useTheme } from "@mui/material";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { useCallback, useContext, useEffect, useMemo, useState } from "react";
 
@@ -9,6 +7,10 @@ import { VisualizationDetailsContext } from "src/components/dashboard-visualizat
 import { VisualizationDetails } from "src/redux/types/ui/visualizationDetails";
 import { HistogramKey } from "src/redux/types/schemas/dashboardVisualizations";
 import { getTextWidth } from "src/components/inline-edit/text-utils";
+import useTheme from "@mui/material/styles/useTheme";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import MenuItem from "@mui/material/MenuItem";
 
 export const ChannelSelect = ({
   channelNames,

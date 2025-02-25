@@ -1,4 +1,4 @@
-import { MoreVert } from "@mui/icons-material";
+import MoreVert from "@mui/icons-material/MoreVert";
 import { MenuButton } from "../../../menu/MenuButton";
 import { memo, useCallback, useMemo } from "react";
 import { usePropertyUtils } from "../usePropertyUtils";

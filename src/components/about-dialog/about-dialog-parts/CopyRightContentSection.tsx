@@ -1,5 +1,6 @@
-import { Typography, useTheme } from "@mui/material";
+import useTheme from "@mui/material/styles/useTheme";
 import AboutPanelAccordion from "./AboutPanelAccordion";
+import Typography from "@mui/material/Typography";
 
 const CopyrightContentSection = () => {
   const theme = useTheme().palette.properties;

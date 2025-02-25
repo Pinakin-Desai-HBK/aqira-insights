@@ -1,9 +1,9 @@
-import { Box } from "@mui/material";
 import { ConvertedColumnDetails } from "src/redux/types/schemas/dataExplorer";
 import { DetailsGridItem } from "src/redux/types/ui/detailsGrid";
 import { ColumnDetailsGrids } from "./ColumnDetailsGrids";
 import { DetailsGrid } from "src/components/detailsGrid/DetailsGrid";
 import { getTextWidth } from "src/components/inline-edit/text-utils";
+import Box from "@mui/material/Box";
 
 export const ColumnDetails = ({
   columnDetails,

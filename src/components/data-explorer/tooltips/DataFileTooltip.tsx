@@ -3,9 +3,9 @@ import { DataFileItem } from "src/redux/types/ui/dataExplorer";
 import { appLabels } from "src/consts/labels";
 import { DetailsHeading } from "src/components/detailsGrid/DetailsHeading";
 import { DetailsLink } from "src/components/detailsGrid/DetailsLink";
-import { Button } from "@mui/material";
 import { DetailsGridItem } from "src/redux/types/ui/detailsGrid";
 import { DetailsGrid } from "src/components/detailsGrid/DetailsGrid";
+import Button from "@mui/material/Button";
 
 const labels = appLabels.DataFileTooltip;
 

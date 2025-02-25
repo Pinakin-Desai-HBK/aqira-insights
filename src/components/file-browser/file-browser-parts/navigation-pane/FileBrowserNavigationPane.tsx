@@ -1,8 +1,8 @@
 import { RichTreeView } from "@mui/x-tree-view/RichTreeView";
 import { FileBrowserRichTreeItem } from "./FileBrowserRichTreeItem";
 import { memo } from "react";
-import { useTheme } from "@mui/material";
 import { FileBrowserNavigationPaneProps } from "src/redux/types/ui/fileBrowser";
+import useTheme from "@mui/material/styles/useTheme";
 
 export const FileBrowserNavigationPane = memo(function FileBrowserNavigationPaneMemo({
   items,

@@ -1,4 +1,3 @@
-import { Box, Tooltip, Typography, useTheme } from "@mui/material";
 import { memo, useCallback, useContext, useEffect, useRef, useState } from "react";
 import PaletteItemDraggable from "./PaletteItemDraggable";
 import { PaletteContext } from "../context/PaletteContext";
@@ -9,6 +8,10 @@ import { useGetPropertiesDataForTypeQuery } from "src/redux/api/appApi";
 import { useAppDispatch } from "src/redux/hooks/hooks";
 import { uiWorkspace_setCurrentlyDraggingProperties } from "src/redux/slices/ui/workspace/workspaceSlice";
 import { skipToken } from "@reduxjs/toolkit/query";
+import useTheme from "@mui/material/styles/useTheme";
+import Tooltip from "@mui/material/Tooltip";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 const labels = appLabels.PaletteItem;
 

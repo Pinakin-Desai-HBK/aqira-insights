@@ -1,9 +1,9 @@
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import { useTheme } from "@mui/material";
 import PaletteItem from "../items/PaletteItem";
 import { memo, useContext } from "react";
 import { PaletteContext } from "../context/PaletteContext";
+import useTheme from "@mui/material/styles/useTheme";
 
 const PaletteSearchResults = memo(() => {
   const { idPart, searchItems, itemLabelPlural, type } = useContext(PaletteContext);

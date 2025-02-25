@@ -1,9 +1,9 @@
-import { Box } from "@mui/material";
 import { ColumnDetailsGrid } from "./ColumnDetailsGrid";
 import { useRef } from "react";
 import { ConvertedColumnDetails } from "src/redux/types/schemas/dataExplorer";
 import { getFilterValues } from "../utils/getFilterValues";
 import { ApiRefs } from "src/redux/types/ui/dataExplorer";
+import Box from "@mui/material/Box";
 
 export const ColumnDetailsGrids = ({
   columnDetails,

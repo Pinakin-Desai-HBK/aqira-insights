@@ -1,6 +1,7 @@
 import { MouseEvent, memo, useCallback } from "react";
 import MuiMenu from "@mui/material/Menu";
-import { MenuItem as MuiMenuItem, Tooltip } from "@mui/material";
+import MuiMenuItem from "@mui/material/MenuItem";
+import Tooltip from "@mui/material/Tooltip";
 import { MenuItem, MenuProps } from "src/redux/types/ui/menu";
 
 export const Menu = memo(

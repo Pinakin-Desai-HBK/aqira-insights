@@ -1,9 +1,9 @@
 import { NetworkDisplayNodeItem } from "src/redux/types/ui/dataExplorer";
-import { Box } from "@mui/material";
 import { appLabels } from "src/consts/labels";
 import { DetailsGridItem } from "src/redux/types/ui/detailsGrid";
 import { DetailsHeading } from "src/components/detailsGrid/DetailsHeading";
 import { DetailsGrid } from "src/components/detailsGrid/DetailsGrid";
+import Box from "@mui/material/Box";
 
 const labels = appLabels.DisplayNodeTooltip;
 

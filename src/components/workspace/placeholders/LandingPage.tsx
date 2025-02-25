@@ -1,5 +1,4 @@
 import { memo } from "react";
-import { useTheme } from "@mui/material";
 import NewNetwork from "../../../assets/svg/new-network.svg";
 import NewDashboard from "../../../assets/svg/new-dashboard.svg";
 import { ActionTypes, MenuActionHandler } from "../../../redux/types/actions";
@@ -7,6 +6,7 @@ import "./LandingPage.css";
 import { useCreateWorkspaceMutation } from "src/redux/api/appApi";
 import LandingPageItem from "./LandingPageItem";
 import { appLabels } from "src/consts/labels";
+import useTheme from "@mui/material/styles/useTheme";
 
 const actionLabels = appLabels.actions;
 

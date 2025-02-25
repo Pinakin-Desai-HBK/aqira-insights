@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import styled from "@mui/material/styles/styled";
 
 const PaletteGroupIcon = styled("div")(({ color }) => ({
   width: "25px",

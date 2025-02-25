@@ -1,4 +1,6 @@
-import { Box, Card, Grid } from "@mui/material";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Grid from "@mui/material/Grid2";
 import { forwardRef } from "react";
 import { PaletteItemDraggableProps } from "src/redux/types/ui/palette";
 

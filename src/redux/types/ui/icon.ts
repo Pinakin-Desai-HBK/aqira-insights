@@ -1,5 +1,5 @@
-import { TooltipProps } from '@mui/material';
-import { CSSProperties, ReactElement } from 'react';
+import { TooltipProps } from "@mui/material/Tooltip";
+import { CSSProperties, ReactElement } from "react";
 
 type CSSModuleClasses = { readonly [key: string]: string };
 
@@ -13,7 +13,7 @@ export type IconProps = {
 
 export type TooltipIconProps = {
   title: string;
-  tooltipPlacement: TooltipProps['placement'];
+  tooltipPlacement: TooltipProps["placement"];
   classes?: CSSModuleClasses[string] | undefined;
   children: ReactElement;
 };

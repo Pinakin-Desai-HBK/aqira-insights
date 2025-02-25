@@ -1,8 +1,10 @@
-import { Button, Tooltip, useTheme } from "@mui/material";
 import { NodeToolbar as ReactFlowNodeToolbar, Position } from "reactflow";
 import { NodeToolbarProps } from "src/redux/types/ui/toolbar";
 import { useMemo } from "react";
 import { typedObjectKeys } from "../../../redux/types/typeUtils";
+import useTheme from "@mui/material/styles/useTheme";
+import Tooltip from "@mui/material/Tooltip";
+import Button from "@mui/material/Button";
 
 export const NodeToolbar = ({ show, actions, handlers, name, locked, selected }: NodeToolbarProps) => {
   const { actionMap, actionOrder } = actions;

@@ -1,8 +1,11 @@
 import { Workspace } from "src/redux/types/schemas/project";
-import { PlayArrow, Stop } from "@mui/icons-material";
+import PlayArrow from "@mui/icons-material/PlayArrow";
+import Stop from "@mui/icons-material/Stop";
 import { useExecutionControls } from "src/components/workspace-canvas/network/custom-controls/useExecutionControls";
 import { getTabIcon } from "./utils/getTabIcon";
-import { Box, SxProps, Tooltip } from "@mui/material";
+import Box from "@mui/material/Box";
+import Tooltip from "@mui/material/Tooltip";
+import { SxProps } from "@mui/material/styles";
 
 const sxProps: SxProps = {
   display: "flex",

@@ -2,8 +2,8 @@ import { memo } from "react";
 import { MenuButton } from "../menu/MenuButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import useHeaderMenuItems from "./hooks/useHeaderMenuItems";
-import { Tooltip } from "@mui/material";
 import { appLabels } from "src/consts/labels";
+import Tooltip from "@mui/material/Tooltip";
 
 const labels = appLabels.HeaderMenu;
 

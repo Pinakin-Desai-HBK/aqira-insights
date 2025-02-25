@@ -3,12 +3,15 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Box from "@mui/material/Box";
-import { IconButton, ListItemText, Tooltip, useTheme } from "@mui/material";
 import { Dispatch, SetStateAction, useCallback, useEffect, useState } from "react";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import { InitallySelectableSideBarItemIdName, PalettePanelSideBarItem } from "src/redux/types/ui/palette";
 import { useSidebarItems } from "./hooks/useSidebarItems";
+import ListItemText from "@mui/material/ListItemText";
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
+import useTheme from "@mui/material/styles/useTheme";
 
 const barWidth = 56;
 const barWidthExpanded = 150;

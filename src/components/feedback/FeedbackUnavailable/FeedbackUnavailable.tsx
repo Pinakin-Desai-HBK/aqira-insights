@@ -2,9 +2,9 @@ import { memo } from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { appLabels } from "src/consts/labels";
-import { useTheme } from "@mui/material";
 import FeedbackTellusMore from "../FeedbackTellUsMore/FeedbackTellUsMore";
 import networkConnectionFailureImage from "./network-connection-failure.png";
+import useTheme from "@mui/material/styles/useTheme";
 
 const labels = appLabels.Feedback;
 

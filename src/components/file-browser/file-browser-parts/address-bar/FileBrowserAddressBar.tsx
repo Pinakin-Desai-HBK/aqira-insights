@@ -1,8 +1,9 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import useTheme from "@mui/material/styles/useTheme";
+import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { Fragment, memo, useEffect, useRef, useState } from "react";
-import { TextField, useTheme } from "@mui/material";
 import { KeyboardEvent } from "react";
 import { FileBrowserAddressBarProps } from "src/redux/types/ui/fileBrowser";
 

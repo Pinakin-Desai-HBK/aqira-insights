@@ -1,13 +1,12 @@
 import { Timestamp } from "./dataExplorer";
+import { TreeViewBaseItem } from "@mui/x-tree-view";
+import { FileDialogParams } from "./dialogs";
 
 export type GetFolderContentsParams = {
   folder: string;
   contentType: FileSystemContentType;
   contentFileFilter: FileSystemContentFileFilter;
 } & Timestamp;
-
-import { TreeViewBaseItem } from "@mui/x-tree-view";
-import { FileDialogParams } from "./dialogs";
 
 export enum FileBrowserAction {
   OpenFile = "OpenFile",

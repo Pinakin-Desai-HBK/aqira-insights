@@ -1,12 +1,12 @@
 import { memo, useContext, useEffect } from "react";
 import { TimeSeriesContext } from "../context/TimeSeriesContext";
-import { Typography } from "@mui/material";
 import { useChartManager } from "src/components/dashboard-visualization/chartManager/useChartManagerr";
 import { processVisualizationName } from "../../Shared/chart/processVisualizationName";
 import { VisualizationDetails } from "src/redux/types/ui/visualizationDetails";
 import { TimeSeriesKey } from "src/redux/types/schemas/dashboardVisualizations";
 import { VisualizationDetailsContext } from "src/components/dashboard-visualization/context/VisualizationDetailsContext";
 import { VisOverLay } from "../../Shared/RenderVisualizationComponent";
+import Typography from "@mui/material/Typography";
 
 // https://github.com/ABTSoftware/SciChart.JS.Examples/blob/master/Examples/src/components/Examples/Charts2D/ZoomingAndPanning/VirtualizedDataWithOverview/index.tsx
 

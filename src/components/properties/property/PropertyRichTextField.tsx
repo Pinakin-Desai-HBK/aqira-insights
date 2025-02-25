@@ -1,5 +1,5 @@
+import Box from "@mui/material/Box";
 import RichTextEditorReadOnly from "../../text-editor/LexicalEditorReadOnly";
-import { Box } from "@mui/material";
 import { usePropertyUtils } from "./usePropertyUtils";
 import { PropertyRichText } from "src/redux/types/schemas/properties";
 import { PropertyParams } from "src/redux/types/ui/properties";

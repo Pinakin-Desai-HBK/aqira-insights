@@ -1,7 +1,10 @@
-import { Accordion, AccordionSummary, AccordionDetails, Divider } from "@mui/material";
+import Accordion from "@mui/material/Accordion";
 import { GroupToggle } from "../../redux/types/ui/themes";
 import { CollapseIcon, ExpandIcon } from "./ExpandIcon";
 import { AccordionGroupProps } from "src/redux/types/ui/accordionGroup";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Divider from "@mui/material/Divider";
+import AccordionDetails from "@mui/material/AccordionDetails";
 
 const getBaseSummarySX = (toggleTheme: GroupToggle, hover: boolean) =>
   hover
@@ -10,7 +13,9 @@ const getBaseSummarySX = (toggleTheme: GroupToggle, hover: boolean) =>
         color: "white",
         "& .MuiSvgIcon-root": { color: toggleTheme.groupToggle },
         "&:hover": { backgroundColor: "inherit" },
-        "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": { transform: "rotate(90deg)" }
+        "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+          transform: "rotate(90deg)"
+        }
       };
 
 const AccordionGroup = ({

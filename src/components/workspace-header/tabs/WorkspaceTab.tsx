@@ -13,7 +13,7 @@ import { workspaceTabNameValidator } from "./utils/workspaceTabNameValidator";
 import { useWorkspace } from "./hooks/useWorkspace";
 import { useTabMenu } from "./hooks/useTabMenu";
 import { TabIconControl } from "./TabIconControl";
-import { Tooltip } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 import { appLabels } from "src/consts/labels";
 
 const labels = appLabels.WorkspaceTab;

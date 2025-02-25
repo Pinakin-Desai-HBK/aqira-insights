@@ -1,4 +1,4 @@
-import { Typography, TypographyProps } from "@mui/material";
+import Typography, { TypographyProps } from "@mui/material/Typography";
 import { memo } from "react";
 import { forwardRef } from "react";
 

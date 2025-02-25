@@ -1,5 +1,6 @@
-import { Typography, useTheme } from "@mui/material";
+import useTheme from "@mui/material/styles/useTheme";
 import AboutSection from "./AboutPanelAccordion";
+import Typography from "@mui/material/Typography";
 
 const ContactUsContentSection = () => {
   const theme = useTheme().palette.properties;

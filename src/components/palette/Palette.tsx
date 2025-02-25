@@ -2,13 +2,13 @@ import styles from "./Palette.module.css";
 import Search from "../search/Search";
 import PaletteSearchResults from "./groups/PaletteSearchResults";
 import Panel from "../panel/ContentPanel";
-import { useTheme } from "@mui/material";
 import PaletteOptions from "./controls/PaletteOptions";
 import PaletteGroups from "./groups/PaletteGroups";
 import { PaletteContext } from "./context/PaletteContext";
 import { memo } from "react";
 import { PaletteContentType } from "src/redux/types/ui/palette";
 import { usePaletteContext } from "./context/usePaletteContext";
+import useTheme from "@mui/material/styles/useTheme";
 
 const Palette = memo(({ type }: { type: PaletteContentType }) => {
   const theme = useTheme();

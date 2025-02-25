@@ -1,8 +1,8 @@
 import { memo, useRef } from "react";
-import { Box } from "@mui/material";
 import { ReactFlowProvider } from "reactflow";
 import NetworkContent from "./NetworkContent";
 import { TypedWorkspace } from "src/redux/types/redux/workspaces";
+import Box from "@mui/material/Box";
 
 const NetworkContentProvider = memo(({ workspace }: { workspace: TypedWorkspace<"Network"> }) => {
   const reactFlowWrapper = useRef<HTMLDivElement | null>(null);

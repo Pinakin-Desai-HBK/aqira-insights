@@ -1,4 +1,3 @@
-import { Box, useTheme } from "@mui/material";
 import { DataGrid, GridFilterAltIcon, GridToolbarContainer } from "@mui/x-data-grid";
 import logMessageColumns from "./logMessageColumns";
 import LogPanelColumnMenu from "./LogPanelColumnMenu";
@@ -11,6 +10,8 @@ import { useAppSelector } from "src/redux/hooks/hooks";
 import { selectStore_UI_LogPanel_LogMessages } from "src/redux/slices/ui/logPanel/logPanelSlice";
 import { useGetLogMessagesQuery } from "src/redux/api/appApi";
 import { GridToolbarFilterButton } from "@mui/x-data-grid";
+import Box from "@mui/material/Box";
+import useTheme from "@mui/material/styles/useTheme";
 
 const LogPanel = () => {
   const theme = useTheme();

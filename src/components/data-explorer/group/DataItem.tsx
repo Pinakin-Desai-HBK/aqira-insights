@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import { memo, useCallback, useContext, useRef, useState } from "react";
 import { DATA_EXPLORER_ROW_HEIGHT } from "src/consts/consts";
 import TypographyEllipses from "../../../styled-components/typography-ellipsis/TypographyEllipsis";
@@ -6,6 +5,7 @@ import { SelectionContext } from "../selection/SelectionContext";
 import { DataGroupItem, DataItemProps, DataItemType } from "src/redux/types/ui/dataExplorer";
 import { DataDraggable } from "./DataDraggable";
 import { DataItemTooltipRenderer } from "./DataItemTooltipRenderer";
+import Box from "@mui/material/Box";
 
 export const DataItem: DataItemType<DataGroupItem> = memo(
   ({

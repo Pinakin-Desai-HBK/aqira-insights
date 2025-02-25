@@ -1,4 +1,4 @@
-import { Tooltip } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 
 export const CountAddornment = ({ value, id, tooltip }: { value: string | number; id: string; tooltip: string }) => {
   return (

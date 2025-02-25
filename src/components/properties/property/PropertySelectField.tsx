@@ -1,10 +1,10 @@
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
-import { useTheme } from "@mui/material";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { usePropertyUtils } from "./usePropertyUtils";
 import { PropertyEnum } from "src/redux/types/schemas/properties";
 import { PropertyParams } from "src/redux/types/ui/properties";
+import useTheme from "@mui/material/styles/useTheme";
 
 const PropertySelectField = (props: PropertyParams<PropertyEnum>) => {
   const theme = useTheme();

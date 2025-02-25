@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
-import { Box, Switch, useTheme } from "@mui/material";
 import { usePropertyUtils } from "./usePropertyUtils";
 import { PropertyBool } from "src/redux/types/schemas/properties";
 import { PropertyParams } from "src/redux/types/ui/properties";
+import useTheme from "@mui/material/styles/useTheme";
 
 const PropertySwitchField = (props: PropertyParams<PropertyBool>) => {
   const theme = useTheme();

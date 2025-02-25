@@ -1,4 +1,5 @@
-import { SxProps, Typography } from "@mui/material";
+import { SxProps } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
 
 export const DetailsHeading = ({ heading, sx }: { heading: string; sx?: SxProps }) => (
   <Typography

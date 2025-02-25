@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { formatStringListForAPI } from "../../../helpers/format-number/format-number";
 import { styled } from "@mui/material/styles";
-import { TextareaAutosize as TextareaAutosizeBase } from "@mui/material";
+import TextareaAutosizeBase from "@mui/material/TextareaAutosize";
 import { usePropertyUtils } from "./usePropertyUtils";
 import { PropertyStringList } from "src/redux/types/schemas/properties";
 import { PropertyParams } from "src/redux/types/ui/properties";

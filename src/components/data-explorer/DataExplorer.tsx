@@ -1,4 +1,3 @@
-import { Box, useTheme } from "@mui/material";
 import Panel from "../panel/ContentPanel";
 import Search from "../search/Search";
 import useDataExplorer from "./useDataExplorer";
@@ -10,6 +9,8 @@ import DataExplorerDisplayNodes from "./items/DataExplorerDisplayNodes";
 import { make_selectStore_UI_DataPanel_ForDataExplorer } from "src/redux/slices/ui/dataPanel/combinedSelectors";
 import { useMemo } from "react";
 import { appLabels } from "src/consts/labels";
+import useTheme from "@mui/material/styles/useTheme";
+import Box from "@mui/material/Box";
 
 const labels = appLabels.DataExplorer;
 

@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import Button from "@mui/material/Button";
 import TypographyEllipses from "../../../styled-components/typography-ellipsis/TypographyEllipsis";
 import { DATA_EXPLORER_ROW_HEADER_TEXT_HEIGHT } from "src/consts/consts";
 import { DataGroupHeaderProps, DataGroupHeaderType } from "src/redux/types/ui/dataExplorer";

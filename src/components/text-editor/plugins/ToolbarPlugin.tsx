@@ -50,7 +50,7 @@ import {
   $isElementNode
 } from "lexical";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { MenuItem } from "@mui/material";
+import MenuItem from "@mui/material/MenuItem";
 import { ElementNode, RangeSelection, TextNode } from "lexical";
 import { DropdownColorPickerProps } from "src/redux/types/ui/textEditor";
 import { JSX } from "react";

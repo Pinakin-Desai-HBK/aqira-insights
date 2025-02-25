@@ -3,11 +3,11 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import { appLabels } from "src/consts/labels";
-import { useTheme } from "@mui/material";
 import FeedbackCategories from "./FeedbackCategories/FeedbackCategories";
 import FeedbackRatings from "./FeedbackRatings/FeedbackRatings";
 import { FeedbackProps } from "src/redux/types/ui/feedback";
 import FeedbackTellusMore from "./FeedbackTellUsMore/FeedbackTellUsMore";
+import useTheme from "@mui/material/styles/useTheme";
 
 const labels = appLabels.Feedback;
 

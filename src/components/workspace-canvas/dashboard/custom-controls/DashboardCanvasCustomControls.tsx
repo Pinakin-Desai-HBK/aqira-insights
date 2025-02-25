@@ -1,6 +1,10 @@
 import { ReactFlowInstance, useReactFlow, useUpdateNodeInternals } from "reactflow";
-import { CenterFocusStrong, ZoomIn, ZoomOut, Lock, LockOpen } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import CenterFocusStrong from "@mui/icons-material/CenterFocusStrong";
+import ZoomIn from "@mui/icons-material/ZoomIn";
+import ZoomOut from "@mui/icons-material/ZoomOut";
+import Lock from "@mui/icons-material/Lock";
+import LockOpen from "@mui/icons-material/LockOpen";
+import Box from "@mui/material/Box";
 import { memo, useCallback } from "react";
 import useDashboardVisualizations from "../useDashboardVisualizations";
 import { ControlsFab } from "../../shared/ControlsFab";

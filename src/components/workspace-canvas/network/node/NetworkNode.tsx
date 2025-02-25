@@ -1,4 +1,6 @@
-import { Card, Box, Grid2 } from "@mui/material";
+import Card from "@mui/material/Card";
+import Box from "@mui/material/Box";
+import Grid2 from "@mui/material/Grid";
 import { NodeProps, Position, useReactFlow } from "reactflow";
 import NetworkNodeHandles from "../node-handles/NetworkNodeHandles";
 import { InlineEdit } from "../../../inline-edit/InlineEdit";

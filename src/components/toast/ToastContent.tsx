@@ -1,4 +1,7 @@
-import { Cancel, CheckCircle, Info, Warning } from "@mui/icons-material";
+import Cancel from "@mui/icons-material/Cancel";
+import CheckCircle from "@mui/icons-material/CheckCircle";
+import Info from "@mui/icons-material/Info";
+import Warning from "@mui/icons-material/Warning";
 import { ToastContentDetails, ToastIconLookupType } from "src/redux/types/ui/toast";
 
 export const ToastIconLookup: ToastIconLookupType = {

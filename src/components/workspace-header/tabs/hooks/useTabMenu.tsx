@@ -14,7 +14,7 @@ import { DeleteTabMessage } from "src/redux/types/ui/messages";
 import CloseIcon from "@mui/icons-material/Close";
 import EditIcon from "@mui/icons-material/Edit";
 import { PythonIcon } from "src/components/icon/Icon";
-import { ArrowOutward } from "@mui/icons-material";
+import ArrowOutward from "@mui/icons-material/ArrowOutward";
 import { popoutDetails } from "src/popoutDetails";
 import { MenuItem } from "src/redux/types/ui/menu";
 import { MenuButton } from "src/components/menu/MenuButton";

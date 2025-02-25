@@ -1,4 +1,3 @@
-import { SpeedDial, SpeedDialAction, SpeedDialIcon, SpeedDialProps } from "@mui/material";
 import React, { useCallback, useEffect } from "react";
 import { popoutDetails } from "src/popoutDetails";
 import usePubSubManager from "src/pubsub-manager/usePubSubManager";
@@ -6,6 +5,9 @@ import { SubscriberTypes, TargetSubscriberType } from "src/redux/types/system/pu
 import { OpenGlobalSpeedDialMessage, SpeedDialItem } from "src/redux/types/ui/messages";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+import SpeedDial, { SpeedDialProps } from "@mui/material/SpeedDial";
+import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
 
 export const GlobalSpeedDial = () => {
   const { popoutId, isPopout } = popoutDetails;

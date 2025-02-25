@@ -1,4 +1,5 @@
-import { ToggleButton, Tooltip } from "@mui/material";
+import ToggleButton from "@mui/material/ToggleButton";
+import Tooltip from "@mui/material/Tooltip";
 import { memo } from "react";
 import { Icon } from "src/components/icon/Icon";
 import { PaletteDisplayButtonProps } from "src/redux/types/ui/palette";

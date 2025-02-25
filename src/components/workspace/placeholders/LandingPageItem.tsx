@@ -1,5 +1,5 @@
 import { LandingPageItemTheme } from "../../../redux/types/ui/themes";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 
 const LandingPageItem = ({
   text,

@@ -1,9 +1,10 @@
-import { Box, IconButton } from "@mui/material";
 import { ApiRefs } from "src/redux/types/ui/dataExplorer";
 import { copyColumnContentsHandler } from "../utils/copyColumnContentsHandler";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { TooltipIcon } from "src/components/icon/Icon";
 import { RefObject } from "react";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
 
 export const ColumnDetailsColumnHeader = ({
   headerLabel,

@@ -1,8 +1,10 @@
 import { RefObject, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { VisualizationDetailsContext } from "src/components/dashboard-visualization/context/VisualizationDetailsContext";
 import { VisualizationDetails } from "src/redux/types/ui/visualizationDetails";
-import { Box, Slider, Typography } from "@mui/material";
 import { IndexSelectionParams } from "./types";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Slider from "@mui/material/Slider";
 
 export const IndexSelect = ({ marksData, visType, indexes, selectedIndex, setSelectedIndex }: IndexSelectionParams) => {
   const { name } = useContext(VisualizationDetailsContext) as VisualizationDetails<typeof visType>;

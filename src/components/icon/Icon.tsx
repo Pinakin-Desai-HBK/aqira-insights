@@ -1,9 +1,7 @@
-import { Tooltip } from "@mui/material";
 import { CSSProperties } from "react";
 import NetworkIconSvg from "./tab-icon-network.svg";
 import VisualizationsPaletteIcon from "./palette-icon-visualiations.svg?react";
 import CategoryIcon from "@mui/icons-material/Category";
-import { InsertDriveFile } from "@mui/icons-material";
 import SidebarAboutIcon from "./sidebar-icon-about.svg?react";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import styles from "./Icon.module.css";
@@ -11,6 +9,8 @@ import PythonIconSvg from "./python.svg";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { IconProps, TooltipIconProps } from "src/redux/types/ui/icon";
 import SidebarFeedbackIcon from "./sidebar-icon-feedback.svg?react";
+import Tooltip from "@mui/material/Tooltip";
+import InsertDriveFile from "@mui/icons-material/InsertDriveFile";
 
 export const Icon = ({ src, style, alt, title, inverted = true }: IconProps) => (
   <img src={src} title={title} alt={alt} style={{ ...(inverted ? { filter: "invert(1)" } : {}), ...style }} />

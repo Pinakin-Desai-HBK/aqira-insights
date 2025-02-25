@@ -1,7 +1,7 @@
 import { memo } from "react";
 import Typography from "@mui/material/Typography";
 import { appLabels } from "src/consts/labels";
-import { useTheme } from "@mui/material";
+import useTheme from "@mui/material/styles/useTheme";
 
 const labels = appLabels.Feedback;
 

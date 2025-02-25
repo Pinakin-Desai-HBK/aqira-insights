@@ -1,4 +1,3 @@
-import { useTheme } from "@mui/material";
 import { useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { DialogContext } from "../../dialog/context/DialogContext";
 import { useAppDispatch, useAppSelector } from "src/redux/hooks/hooks";
@@ -23,6 +22,7 @@ import {
 import { popoutDetails } from "src/popoutDetails";
 import { allSidebarItems } from "../allSidebarItems";
 import { appLabels } from "src/consts/labels";
+import useTheme from "@mui/material/styles/useTheme";
 
 const aboutLabels = appLabels.About;
 const feedbackLabels = appLabels.Feedback;

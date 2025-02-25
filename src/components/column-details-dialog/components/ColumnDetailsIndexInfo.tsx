@@ -1,8 +1,8 @@
-import { Box } from "@mui/material";
 import { DetailsGrid } from "src/components/detailsGrid/DetailsGrid";
 import { ConvertedColumnDetails } from "src/redux/types/schemas/dataExplorer";
 import { DetailsGridItem } from "src/redux/types/ui/detailsGrid";
 import { getIndexDetailsItems } from "../utils/getIndexDetailsItems";
+import Box from "@mui/material/Box";
 
 export const ColumnDetailsIndexInfo = ({
   index,

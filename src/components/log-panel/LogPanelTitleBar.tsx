@@ -1,5 +1,7 @@
-import { Box, IconButton, Typography } from "@mui/material";
-import { Close } from "@mui/icons-material";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Close from "@mui/icons-material/Close";
 import { useAppDispatch } from "src/redux/hooks/hooks";
 import { uiLogPanel_toggle } from "src/redux/slices/ui/logPanel/logPanelSlice";
 

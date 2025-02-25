@@ -1,5 +1,5 @@
 import { memo, useRef } from "react";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import { ReactFlowProvider } from "reactflow";
 import DashboardContent from "./DashboardContent";
 import { TypedWorkspace } from "src/redux/types/redux/workspaces";

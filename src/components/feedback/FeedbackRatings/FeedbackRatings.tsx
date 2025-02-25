@@ -1,9 +1,9 @@
 import Grid from "@mui/material/Grid2";
 import IconButton from "@mui/material/IconButton";
 import FeedbackRatingIcon from "../../icon/FeedbackRatingIcon/FeedbackRatingIcon";
-import { useTheme } from "@mui/material";
 import { memo } from "react";
 import { FeedbackRatingsProps } from "src/redux/types/ui/feedback";
+import useTheme from "@mui/material/styles/useTheme";
 
 const FeedbackRatings = memo(({ ratings, selectedRating, testIdPrefix, setSelectedRating }: FeedbackRatingsProps) => {
   const theme = useTheme().palette.feedback;

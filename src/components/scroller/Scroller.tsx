@@ -1,10 +1,11 @@
-import { Button } from "@mui/material";
 import { MouseEventHandler, useCallback, useEffect, useRef, useState } from "react";
 import styles from "./Scroller.module.css";
-import { ArrowLeft, ArrowRight } from "@mui/icons-material";
+import ArrowLeft from "@mui/icons-material/ArrowLeft";
+import ArrowRight from "@mui/icons-material/ArrowRight";
 import { useResizeDetector } from "react-resize-detector";
 import { IntervalRef, ScrollerProps } from "src/redux/types/ui/scroller";
 import { clearIntervalRef, createEmptyIntervalRef, getButtonVisibility } from "./utils";
+import Button from "@mui/material/Button";
 
 export const Scroller = ({ setRef, scrollToRef, children }: ScrollerProps) => {
   const containerRef = useRef<HTMLDivElement | null>(null);

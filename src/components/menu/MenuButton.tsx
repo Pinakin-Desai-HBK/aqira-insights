@@ -1,8 +1,9 @@
 import { MouseEvent, memo, useCallback, useState } from "react";
 import Button from "@mui/material/Button";
-import { Tooltip, useTheme } from "@mui/material";
 import { MenuButtonProps } from "src/redux/types/ui/menu";
 import { Menu } from "./Menu";
+import Tooltip from "@mui/material/Tooltip";
+import useTheme from "@mui/material/styles/useTheme";
 
 export const MenuButton = memo(
   ({

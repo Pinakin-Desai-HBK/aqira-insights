@@ -8,9 +8,9 @@ import {
 } from "src/consts/consts";
 import { ApiRefs } from "src/redux/types/ui/dataExplorer";
 import { ColumnDetailsColumnHeader } from "../components/ColumnDetailsColumnHeader";
-import { Tooltip } from "@mui/material";
 import { formatChartNumber } from "src/helpers/format-number/format-number";
 import { RefObject } from "react";
+import Tooltip from "@mui/material/Tooltip";
 
 export const formatNumber = (value: unknown) => {
   const result = formatChartNumber(value);

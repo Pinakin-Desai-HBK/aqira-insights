@@ -1,4 +1,5 @@
-import { IconButton, Tooltip } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 import { DataExplorerOptionButtonProps } from "src/redux/types/ui/dataExplorer";
 
 export const DataExplorerOptionButton = ({ ariaLabel, id, children, onClick }: DataExplorerOptionButtonProps) => {

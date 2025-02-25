@@ -1,6 +1,6 @@
+import debounce from "@mui/material/utils/debounce";
 import { GridScrollApi } from "@mui/x-data-grid";
 import { useEffect, useRef } from "react";
-import { debounce } from "@mui/material";
 import { GridType, UseGridSyncProps } from "src/redux/types/ui/dataExplorer";
 
 export const useGridSync = <T extends GridType>(props: UseGridSyncProps<T>) => {

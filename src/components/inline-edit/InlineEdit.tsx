@@ -1,8 +1,10 @@
-import { Popper, TextField, Tooltip } from "@mui/material";
 import { ChangeEvent, KeyboardEvent, memo, useCallback, useEffect, useRef, useState } from "react";
 import { useLongPress } from "use-long-press";
 import { getCanvasFont, getTextWidth } from "./text-utils";
 import { InlineEditProps, InlineEditState } from "src/redux/types/ui/inlineEdit";
+import Tooltip from "@mui/material/Tooltip";
+import TextField from "@mui/material/TextField";
+import Popper from "@mui/material/Popper";
 
 export const InlineEdit = memo((props: InlineEditProps) => {
   const {

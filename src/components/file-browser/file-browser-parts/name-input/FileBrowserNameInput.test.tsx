@@ -1,8 +1,8 @@
 import { Mock, describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { FileBrowserNameInput } from "./FileBrowserNameInput";
-import { ThemeProvider } from "@mui/material";
 import { themeAILight } from "../../../../redux/types/ui/themes";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 
 const doRender = (errorMessage: string = ""): { container: HTMLElement; onChange: Mock } => {
   const onChange = vi.fn();

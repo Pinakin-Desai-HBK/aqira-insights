@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -9,6 +8,7 @@ import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import FolderIcon from "@mui/icons-material/Folder";
 import { Fragment, memo } from "react";
 import { FileBrowserFileListProps } from "src/redux/types/ui/fileBrowser";
+import Box from "@mui/material/Box";
 
 export const FileBrowserFileList = memo(function FileBrowserFileListmemo({
   selectedIndex,

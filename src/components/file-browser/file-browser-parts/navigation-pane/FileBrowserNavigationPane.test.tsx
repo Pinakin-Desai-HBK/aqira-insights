@@ -1,10 +1,10 @@
 import { Mock, describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen } from "@testing-library/react";
-import { ThemeProvider } from "@mui/material";
 import { themeAILight } from "../../../../redux/types/ui/themes";
 import { FileBrowserNavigationPane } from "./FileBrowserNavigationPane";
 import { mockNavigationPaneData } from "../../../../../vite-test/mock-data/mock-navigation-pane-tree-data";
 import { TreeViewBaseItem } from "@mui/x-tree-view";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 
 const doRender = (): { container: HTMLElement; handleItemExpansion: Mock; handleItemSelection: Mock } => {
   const handleItemExpansion = vi.fn();

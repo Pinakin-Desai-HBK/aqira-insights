@@ -1,9 +1,9 @@
 import { useCallback } from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { useTheme } from "@mui/material/styles";
 import { TABLE_VIS_HEADER_CLASS_NAME, TABLE_VIS_HEADER_FONT } from "src/consts/consts";
 import Stack from "@mui/material/Stack";
 import { TableData } from "src/redux/types/ui/table";
+import useTheme from "@mui/material/styles/useTheme";
 
 type TableBaseProps = {
   tableData: TableData;

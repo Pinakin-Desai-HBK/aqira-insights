@@ -6,16 +6,22 @@ import { ColumnDetailsGridToolbar } from "./ColumnDetailsGridToolbar";
 import { getColumnDetailsDefinitions } from "../utils/getColumnDetailsDefinitions";
 import { getColumnDetailsGridSx } from "../utils/getColumnDetailsGridSx";
 import { ColumnDetailsIndexInfo } from "./ColumnDetailsIndexInfo";
-import { Box } from "@mui/material";
 import { ColumnDetailsGridParams, GridType } from "src/redux/types/ui/dataExplorer";
 import { copyTableContentsHandler } from "../utils/copyTableContentsHandler";
+import Box from "@mui/material/Box";
 
 export const ColumnDetailsGrid = (props: ColumnDetailsGridParams<GridType>) => {
   const { apiRefs, currentIndex, unitValues, typeValues, maxNameWidth, type } = props;
   const apiRef = useGridApiRef();
   useGridSync(
     type === "dataColumns"
-      ? { apiRefs, currentIndex, indexDetails: props.columnDetails.index, type, apiRef }
+      ? {
+          apiRefs,
+          currentIndex,
+          indexDetails: props.columnDetails.index,
+          type,
+          apiRef
+        }
       : { apiRefs, currentIndex, type, apiRef }
   );
   const [filterButtonEl, setFilterButtonEl] = useState<HTMLButtonElement | null>(null);

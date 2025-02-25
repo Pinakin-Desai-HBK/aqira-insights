@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import PopoutPlaceholder from "../../../assets/svg/popout-placeholder.svg";
 import { Icon } from "../../icon/Icon";
 import { popoutDetails } from "src/popoutDetails";

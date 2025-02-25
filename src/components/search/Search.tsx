@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { IconButton, InputAdornment, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
 import { SearchProps } from "src/redux/types/ui/search";
+import TextField from "@mui/material/TextField";
 
 const Search = ({ themeSearch, onSearchTextChange, placeholder, type }: SearchProps) => {
   const [searchText, setSearchText] = useState("");

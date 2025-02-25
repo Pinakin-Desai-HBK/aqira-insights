@@ -1,9 +1,12 @@
 import Stack from "@mui/material/Stack";
-import { Box, SxProps, Theme, Tooltip, useTheme } from "@mui/material";
 import TypographyEllipses from "../../../styled-components/typography-ellipsis/TypographyEllipsis";
 import PropertyMenu from "./menu/PropertyMenu";
 import { useMemo } from "react";
 import { PropertyComponentProps } from "src/redux/types/ui/properties";
+import { SxProps, Theme } from "@mui/material/styles";
+import Tooltip from "@mui/material/Tooltip";
+import Box from "@mui/material/Box";
+import useTheme from "@mui/material/styles/useTheme";
 
 const getSx = (theme: Theme): SxProps<Theme> => {
   const childrenStyle = {

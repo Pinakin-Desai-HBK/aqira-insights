@@ -1,4 +1,6 @@
-import { Box, Grid2, Tooltip } from "@mui/material";
+import Box from "@mui/material/Box";
+import Grid2 from "@mui/material/Grid2";
+import Tooltip from "@mui/material/Tooltip";
 import React from "react";
 import { DetailsGridProps } from "src/redux/types/ui/detailsGrid";
 

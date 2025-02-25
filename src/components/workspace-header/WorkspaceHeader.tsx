@@ -1,4 +1,4 @@
-import { Add } from "@mui/icons-material";
+import Add from "@mui/icons-material/Add";
 import { WorkSpaceTabs } from "./tabs/WorkspaceTabs";
 import { memo, useEffect, useState } from "react";
 import { useAppSelector } from "src/redux/hooks/hooks";

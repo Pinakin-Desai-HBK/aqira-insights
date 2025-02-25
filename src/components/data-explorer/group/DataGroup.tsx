@@ -1,10 +1,11 @@
 import { FixedSizeList } from "react-window";
-import { Box, useTheme } from "@mui/material";
 import AutoSizer from "react-virtualized-auto-sizer";
 import { useContext, useEffect } from "react";
 import { SelectionContext } from "../selection/SelectionContext";
 import { DataGroupItem, DataGroupProps, DataGroupType } from "src/redux/types/ui/dataExplorer";
 import { DATA_EXPLORER_ROW_HEIGHT } from "src/consts/consts";
+import useTheme from "@mui/material/styles/useTheme";
+import Box from "@mui/material/Box";
 
 export const DataGroup: DataGroupType<DataGroupItem> = (props: DataGroupProps<DataGroupItem>) => {
   const { groupItems, allGroupItems, isOpen, minHeight, Row, listTestId, testId } = props;

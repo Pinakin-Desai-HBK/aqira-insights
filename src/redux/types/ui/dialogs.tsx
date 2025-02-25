@@ -1,4 +1,3 @@
-import { Breakpoint, Theme, SxProps } from "@mui/material";
 import React, { ChangeEventHandler, ComponentProps, KeyboardEventHandler, ReactElement } from "react";
 import { APIError } from "src/redux/api/utils/responseValidator";
 import { FileBrowserAction, FileSystemContentFileFilter } from "./fileBrowser";
@@ -16,6 +15,7 @@ import ColumnDetailsDialog from "src/components/dialog/dialogs/ColumnDetailsDial
 import { DataFileDetails } from "./dataExplorer";
 import FeedbackDialog from "src/components/dialog/dialogs/FeedbackDialog";
 import { JSX } from "react";
+import { Breakpoint, SxProps, Theme } from "@mui/material/styles";
 
 export type DialogTextFieldState = {
   error: boolean;

@@ -4,8 +4,8 @@ import Typography from "@mui/material/Typography";
 import { memo } from "react";
 import { appLabels } from "src/consts/labels";
 import fireworksImage from "./fireworks.gif";
-import { useTheme } from "@mui/material";
 import { FeedbackStatusProps } from "src/redux/types/ui/feedback";
+import useTheme from "@mui/material/styles/useTheme";
 
 const labels = appLabels.FeedbackStatus;
 

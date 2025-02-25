@@ -12,7 +12,6 @@ import ReactFlow, {
 } from "reactflow";
 import NetworkCanvasCustomControls from "./custom-controls/NetworkCanvasCustomControls";
 import "reactflow/dist/style.css";
-import { useTheme } from "@mui/material";
 import { useNetworkNodes } from "./useNetworkNodes";
 import useNetworkConnections from "./useNetworkConnections";
 import { DragAndDropDataFormat } from "../../../enums/enums";
@@ -50,6 +49,7 @@ import {
   setDataTransferEffect
 } from "./interaction-utils";
 import { NetworkNodeDataUI } from "src/redux/types/ui/networkNodes";
+import useTheme from "@mui/material/styles/useTheme";
 
 const NetworkContent = memo(({ workspace }: { workspace: TypedWorkspace<"Network"> }) => {
   const theme = useTheme();

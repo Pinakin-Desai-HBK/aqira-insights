@@ -1,9 +1,10 @@
-import { Stack, useTheme } from "@mui/material";
 import { FileBrowserAddressBar } from "../file-browser-parts/address-bar/FileBrowserAddressBar";
 import { FileBrowserNavigationPane } from "../file-browser-parts/navigation-pane/FileBrowserNavigationPane";
 import { FileBrowserFileList } from "../file-browser-parts/file-list/FileBrowserFileList";
 import { FileBrowserNameInput } from "../file-browser-parts/name-input/FileBrowserNameInput";
 import { DialogFileBrowserParams } from "src/redux/types/ui/fileBrowser";
+import useTheme from "@mui/material/styles/useTheme";
+import Stack from "@mui/material/Stack";
 
 export const DialogFileBrowser = (props: DialogFileBrowserParams) => {
   const theme = useTheme();
