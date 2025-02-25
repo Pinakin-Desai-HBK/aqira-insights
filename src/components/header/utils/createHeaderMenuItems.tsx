@@ -1,7 +1,7 @@
 import { MenuItem } from "src/redux/types/ui/menu";
 import { ActionTypes, MenuActionHandler } from "../../../redux/types/actions";
 import { appLabels } from "src/consts/labels";
-import { Add } from "@mui/icons-material";
+import Add from "@mui/icons-material/Add";
 
 const actionLabels = appLabels.actions;
 

@@ -3,6 +3,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
 import { SearchProps } from "src/redux/types/ui/search";
 import TextField from "@mui/material/TextField";
+import InputAdornment from "@mui/material/InputAdornment";
+import IconButton from "@mui/material/IconButton";
 
 const Search = ({ themeSearch, onSearchTextChange, placeholder, type }: SearchProps) => {
   const [searchText, setSearchText] = useState("");

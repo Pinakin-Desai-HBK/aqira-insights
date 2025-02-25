@@ -3,6 +3,8 @@ import { usePropertyUtils } from "./usePropertyUtils";
 import { PropertyBool } from "src/redux/types/schemas/properties";
 import { PropertyParams } from "src/redux/types/ui/properties";
 import useTheme from "@mui/material/styles/useTheme";
+import Box from "@mui/material/Box";
+import Switch from "@mui/material/Switch";
 
 const PropertySwitchField = (props: PropertyParams<PropertyBool>) => {
   const theme = useTheme();
