@@ -1,22 +1,31 @@
-import { NumberRange, NumericTickProvider, TSciChart } from "scichart";
-import { Bin } from "../../../../../types";
+import { NumberRange, NumericTickProvider, TSciChart } from 'scichart';
+import { Bin } from '../../../../../types';
 
 export class CustomXTickProvider extends NumericTickProvider {
   private bins: Bin[];
-  private tickType: "center" | "bounds";
+  private tickType: 'center' | 'bounds';
   private width: number;
 
-  constructor(wasmContext: TSciChart, bins: Bin[], tickType: "center" | "bounds", width: number) {
+  constructor(
+    wasmContext: TSciChart,
+    bins: Bin[],
+    tickType: 'center' | 'bounds',
+    width: number,
+  ) {
     super(wasmContext);
     this.bins = bins;
     this.tickType = tickType;
     this.width = width;
   }
 
-  override getMajorTicks(minorDelta: number, majorDelta: number, visibleRange: NumberRange): number[] {
+  override getMajorTicks(
+    minorDelta: number,
+    majorDelta: number,
+    visibleRange: NumberRange,
+  ): number[] {
     const ticks = this.getMinorTicks();
     let lastX: number | null = null;
-    const result = [];
+    const result: number[] = [];
     const rangeToClient = this.width / (visibleRange.max - visibleRange.min);
     for (let i = 0; i < ticks.length; i++) {
       const tick = ticks[i];
@@ -34,8 +43,11 @@ export class CustomXTickProvider extends NumericTickProvider {
   override getMinorTicks(): number[] {
     const lastPoint = this.bins[this.bins.length - 1]!.start;
     const ticks =
-      this.tickType === "bounds"
-        ? [...this.bins.slice(0).map((bin) => bin.start), ...(lastPoint !== undefined ? [lastPoint] : [])]
+      this.tickType === 'bounds'
+        ? [
+            ...this.bins.slice(0).map((bin) => bin.start),
+            ...(lastPoint !== undefined ? [lastPoint] : []),
+          ]
         : this.bins.map((bin) => bin.midPoint);
     return ticks;
   }
