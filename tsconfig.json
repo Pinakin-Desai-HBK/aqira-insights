@@ -1,33 +1,35 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+/* To learn more about this file see: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"],
+    "noImplicitAny": false,
     "jsx": "react-jsx",
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleDetection": "force",
-    "lib": ["es2022", "dom", "dom.iterable"],
+    "isolatedModules": true,
     "typeRoots": ["node_modules/@types", "src/types"],
-    "allowImportingTsExtensions": true,
-    "declaration": true,
-    "noEmit": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
@@ -38,9 +40,7 @@
     "exactOptionalPropertyTypes": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noUncheckedIndexedAccess": true,
-    "inlineSourceMap": true,
-    "baseUrl": "."
+    "noUncheckedIndexedAccess": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
