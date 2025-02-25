@@ -1,0 +1,67 @@
+html {
+  overflow: hidden;
+}
+
+#root {
+  margin: 0;
+  text-align: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.scichart__legend > div {
+  padding: 0px !important;
+}
+
+.Workspace_Canvas .react-flow__pane {
+  z-index: 1;
+  cursor: -webkit-default;
+  cursor: grab;
+}
+
+.Workspace_Canvas .react-flow__pane.selection {
+  cursor: default;
+}
+
+.react-flow__node.circle {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-color: black;
+  background-color: #00c7f5;
+  color: black;
+  border-width: 1px;
+}
+
+.react-flow__node canvas {
+  height: 100%;
+  width: 100% !important;
+}
+
+.Workspace_Canvas .react-flow__edge.selected .react-flow__edge-path,
+.Workspace_Canvas .react-flow__edge:focus .react-flow__edge-path,
+.Workspace_Canvas .react-flow__edge:focus-visible .react-flow__edge-path {
+  stroke: #1d9dbe;
+}
+
+.Workspace_Canvas .react-flow__edge-path,
+.Workspace_Canvas .react-flow__connection-path {
+  stroke: rgb(30, 30, 30);
+}
+
+.Workspace_Canvas .EdgeDragHoverNotAllowed .react-flow__edge-path {
+  stroke: #be1d1d;
+  stroke-width: 3;
+}
+
+.Workspace_Canvas .EdgeDragHoverAllowed .react-flow__edge-path {
+  stroke: #1dbe4b;
+  stroke-width: 3;
+}

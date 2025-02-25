@@ -1,0 +1,13 @@
+.nodes_icon g {
+  scale: 0.064;
+}
+
+.visualizations_icon g {
+  scale: 0.25;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

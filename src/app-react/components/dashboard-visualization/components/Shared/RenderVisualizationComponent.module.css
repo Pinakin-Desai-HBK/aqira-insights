@@ -1,0 +1,23 @@
+.VisualizationContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}

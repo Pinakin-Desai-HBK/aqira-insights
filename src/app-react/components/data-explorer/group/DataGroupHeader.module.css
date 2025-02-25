@@ -1,0 +1,8 @@
+.arrow {
+  margin-left: 12px;
+  transition: transform 100ms ease-in-out !important;
+}
+
+.isOpen {
+  transform: rotate(90deg);
+}

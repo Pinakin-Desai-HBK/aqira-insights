@@ -1,0 +1,36 @@
+.AI_Tabs_Scroller {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  gap: 5px;
+}
+
+.AI_Tabs_Scroller::-webkit-scrollbar {
+  background: transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.AI_Tabs_Scroller_Button {
+  margin-top: 20px;
+  background-color: transparent;
+  outline: none !important;
+  font-size: 20px;
+  min-width: 30px !important;
+  padding: 0px !important;
+  height: 40px;
+  overflow: hidden;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.AI_Tabs_Scroller_Button {
+  color: #055b9d;
+}
+
+.AI_Tabs_Scroller_Button :hover {
+  color: #92e2df;
+}

@@ -1,0 +1,15 @@
+For each slice:
+
+1. Create reducers folder
+2. Create extraReducers foolder
+3. For each slice reducer create a file in the reducers folder named "<reducerName>_Reducer.ts" and move the reducer to that file
+4. For each extra reducer create a file called "<endpointName>_<type>_Builder.ts" and move the extra reducer to that file 
+    - type could be matchFulfilled, matchPending, matchRejected
+    
+    example:
+        const newProject_MatchFulfilled_ER = (builder: ActionReducerMapBuilder<UIProjectSlice>) => {
+            builder.addMatcher(appApi.endpoints.newProject.matchFulfilled, (state, { payload: project }) =>
+                ...
+            );
+        };
+

@@ -1,0 +1,20 @@
+.itemsContainer {
+  height: calc(100% - 84px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8px;
+}
+
+.searchContainer {
+  margin: 0 4px 8px;
+}
+
+.groupIcon {
+  position: absolute;
+  top: 11px;
+}
+
+.groupLabel {
+  margin-left: 40px;
+  font-size: small;
+}
