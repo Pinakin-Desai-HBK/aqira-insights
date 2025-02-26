@@ -95,7 +95,7 @@ export const Scroller = ({ setRef, scrollToRef, children }: ScrollerProps) => {
         <Button
           data-testid="WorkspaceHeaderTabsLeft"
           style={{ visibility: leftVisible ? "visible" : "hidden" }}
-          className={`${styles.AI_Tabs_Scroller_Button}`}
+          className={`AI_Tabs_Scroller_Button`}
           onMouseUp={mouseUp}
           onMouseDown={() => {
             mouseDown("left");
@@ -109,7 +109,7 @@ export const Scroller = ({ setRef, scrollToRef, children }: ScrollerProps) => {
         data-testid="WorkspaceHeaderTabsScroller"
         onReset={checkButtons}
         onScroll={checkButtons}
-        className={`${styles.AI_Tabs_Scroller}`}
+        className={`AI_Tabs_Scroller`}
         ref={containerRef}
       >
         {children}
@@ -118,7 +118,7 @@ export const Scroller = ({ setRef, scrollToRef, children }: ScrollerProps) => {
         <Button
           data-testid="WorkspaceHeaderTabsRight"
           style={{ visibility: rightVisible ? "visible" : "hidden" }}
-          className={`${styles.AI_Tabs_Scroller_Button}`}
+          className={`AI_Tabs_Scroller_Button`}
           onMouseUp={mouseUp}
           onMouseDown={() => {
             mouseDown("right");

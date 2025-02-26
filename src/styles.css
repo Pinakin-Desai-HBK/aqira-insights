@@ -11,15 +11,6 @@ body {
 
 /**** Main.css *****/
 
-/* 
-.AI-visualizations-palette-container,
-.AI-nodes-palette-container {
-    scrollbar-color: #06869b #025f7e;
-    scrollbar-width: thin;
-    scrollbar-arrow-color: #06869b;
-}
-*/
-
 #new-window-container {
   height: 100%;
   width: 100%;
@@ -28,18 +19,6 @@ body {
   flex-direction: row;
   overflow: hidden;
 }
-
-/* 
-  .AI-data-explorer-container {
-      scrollbar-color: rgba(255, 255, 255, 0.7) #237F7B;
-      scrollbar-width: thin;
-      scrollbar-arrow-color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .AI-properties-container {
-      scrollbar-width: thin;
-  }
-  */
 
 ::-moz-scrollbar-button,
 ::-webkit-scrollbar-button {
@@ -365,4 +344,120 @@ body {
 
 .ShiftPressed .react-flow__node {
   pointer-events: all !important;
+}
+
+/**** Scroller.module.css *****/
+
+.AI_Tabs_Scroller {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  gap: 5px;
+}
+
+.AI_Tabs_Scroller::-webkit-scrollbar {
+  background: transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.AI_Tabs_Scroller_Button {
+  margin-top: 20px;
+  background-color: transparent;
+  outline: none !important;
+  font-size: 20px;
+  min-width: 30px !important;
+  padding: 0px !important;
+  height: 40px;
+  overflow: hidden;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.AI_Tabs_Scroller_Button {
+  color: #055b9d;
+}
+
+.AI_Tabs_Scroller_Button :hover {
+  color: #92e2df;
+}
+
+/**** Toast.css *****/
+
+.ToastContent {
+  background-color: #fff;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 77px;
+  max-width: 300px;
+  width: 300px;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 10px 50px 0px #232a3133;
+  align-items: stretch;
+  padding-right: 10px;
+  cursor: default;
+  pointer-events: all;
+}
+
+.ToastContentBar {
+  background-color: #aaa;
+  width: 12px;
+  min-width: 12px;
+}
+
+.ToastContentIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ToastContentIcon {
+  width: 28px;
+  height: 28px;
+  color: #aaa;
+}
+
+.ToastContentIcon.Close {
+  color: #333;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.ToastContent .ToastContentIcon svg {
+  width: 28px;
+  height: 28px;
+  color: inherit;
+}
+
+.ToastContentTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.ToastContentTitle {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 17px !important;
+  text-align: left !important;
+  color: #333d47 !important;
+}
+
+.ToastContentMessage {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 14px !important;
+  text-align: left !important;
+  color: #333d47 !important;
 }
