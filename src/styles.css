@@ -461,3 +461,71 @@ body {
   text-align: left !important;
   color: #333d47 !important;
 }
+
+/**** ResizeStyles.css *****/
+
+/* This cannot be converted to a CSS module */
+
+.Workspace_Canvas .react-flow__resize-control {
+  border-color: #00335a !important;
+  background-color: #00335a !important;
+}
+
+.Workspace_Canvas .react-flow__resize-control.handle {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  z-index: 20000;
+}
+
+.Workspace_Canvas .react-flow__resize-control.line.left {
+  left: 2px;
+  border-left-width: 4px;
+  z-index: 20000;
+  width: 0px;
+}
+
+.Workspace_Canvas .react-flow__resize-control.line.right {
+  left: calc(100% - 2px);
+  border-right-width: 4px;
+  z-index: 20000;
+  width: 0px;
+}
+
+.Workspace_Canvas .react-flow__resize-control.line.top {
+  top: 2px;
+  border-top-width: 4px;
+  z-index: 20000;
+  height: 0px;
+}
+
+.Workspace_Canvas .react-flow__resize-control.line.bottom {
+  top: calc(100% - 2px);
+  border-bottom-width: 4px;
+  z-index: 20000;
+  height: 0px;
+}
+
+.Workspace_Canvas .react-flow__resize-control.handle.top.right {
+  transform: unset;
+  left: calc(100% - 20px);
+}
+
+.Workspace_Canvas .react-flow__resize-control.handle.top.left {
+  transform: unset;
+}
+
+.Workspace_Canvas .react-flow__resize-control.handle.bottom.right {
+  transform: unset;
+  left: calc(100% - 20px);
+  top: calc(100% - 20px);
+}
+
+.Workspace_Canvas .react-flow__resize-control.handle.bottom.left {
+  transform: unset;
+  top: calc(100% - 20px);
+}
+
+.Workspace_Canvas .react-flow__node .MuiDataGrid-root {
+  border: 0px;
+}
