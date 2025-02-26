@@ -21,9 +21,10 @@ export const NetworkIconInverted = (style: CSSProperties) => (
   <Icon src={NetworkIconSvg} style={style} inverted={true} />
 );
 
-export const DashboardIcon = (style: CSSProperties) => <VisualizationsPaletteIcon className="tabicon" style={style} />;
+export const DashboardIcon = (style: CSSProperties) => <div>DI</div>; //<VisualizationsPaletteIcon className="tabicon" style={style} />;
 export const DashboardIconInverted = (style: CSSProperties) => (
-  <VisualizationsPaletteIcon className="tabicon" style={style} />
+  // <VisualizationsPaletteIcon className="tabicon" style={style} />
+  <div>DII</div>
 );
 
 export const PythonIcon = (style: CSSProperties) => <Icon src={PythonIconSvg} style={style} inverted={false} />;
@@ -54,7 +55,8 @@ export const LogIcon = (
 
 export const AboutIcon = (
   <TooltipIcon title="About" tooltipPlacement={"right"}>
-    <SidebarAboutIcon />
+    {/* <SidebarAboutIcon /> */}
+    <div>SAI</div>
   </TooltipIcon>
 );
 
@@ -72,6 +74,7 @@ export const HelpIcon = (
 
 export const FeedbackIcon = (
   <TooltipIcon title="Feedback" tooltipPlacement={"right"}>
-    <SidebarFeedbackIcon />
+    {/* <SidebarFeedbackIcon /> */}
+    <div>SFI</div>
   </TooltipIcon>
 );

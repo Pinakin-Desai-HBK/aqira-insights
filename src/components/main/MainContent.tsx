@@ -15,7 +15,11 @@ const MainContent = memo(() => {
     <Grid
       className="main"
       container
-      style={isPopout ? { minHeight: "400px", minWidth: "400px" } : { minHeight: "600px", minWidth: "900px" }}
+      style={
+        isPopout
+          ? { minHeight: "400px", minWidth: "400px" }
+          : { backgroundColor: "#eef5fb", height: "calc(100% - 50px)", borderRadius: "8px" }
+      }
     >
       <Toast
         toastKey={"app-toast"}
