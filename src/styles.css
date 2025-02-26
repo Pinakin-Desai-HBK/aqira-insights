@@ -1,4 +1,368 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/**** Main.css *****/
+
+/* 
+.AI-visualizations-palette-container,
+.AI-nodes-palette-container {
+    scrollbar-color: #06869b #025f7e;
+    scrollbar-width: thin;
+    scrollbar-arrow-color: #06869b;
+}
+*/
+
+#new-window-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/* 
+  .AI-data-explorer-container {
+      scrollbar-color: rgba(255, 255, 255, 0.7) #237F7B;
+      scrollbar-width: thin;
+      scrollbar-arrow-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .AI-properties-container {
+      scrollbar-width: thin;
+  }
+  */
+
+::-moz-scrollbar-button,
+::-webkit-scrollbar-button {
+  background: #237f7b;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.column-details.hide-scroll ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* data information dialog */
+.column-details-scroller::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.column-details-scroller::-webkit-scrollbar-thumb {
+  background: #dedfe2;
+  border: 1px solid #fff;
+}
+
+.column-details-scroller::-webkit-scrollbar-thumb:hover {
+  background: #999ea6;
+}
+
+/* node and visualization palettes */
+.AI-visualizations-palette-container::-webkit-scrollbar-track,
+.AI-nodes-palette-container::-webkit-scrollbar-track {
+  background: #025f7e;
+}
+
+.AI-visualizations-palette-container::-webkit-scrollbar-thumb,
+.AI-nodes-palette-container::-webkit-scrollbar-thumb {
+  background: #06869b;
+  border: 1px solid #025f7e;
+}
+.AI-visualizations-palette-container::-webkit-scrollbar-thumb:hover,
+.AI-nodes-palette-container::-webkit-scrollbar-thumb:hover {
+  background: #0997a8;
+}
+
+/* data explorer */
+.AI-panel-Data *::-webkit-scrollbar-track {
+  background: #237f7b;
+}
+
+.AI-panel-Data *::-webkit-scrollbar-thumb {
+  background: #1f9e99;
+  border: 1px solid #237f7b;
+}
+
+.AI-panel-Data *::-webkit-scrollbar-thumb:hover {
+  background: #22ada9;
+}
+
+/* properties container */
+.AI-properties-container::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.AI-properties-container::-webkit-scrollbar-thumb {
+  background: #dedfe2;
+  border: 1px solid #fff;
+}
+
+.AI-properties-container::-webkit-scrollbar-thumb:hover {
+  background: #999ea6;
+}
+
+/* MUI DataGrid */
+.MuiDataGrid-scrollbar::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.MuiDataGrid-scrollbar::-webkit-scrollbar-thumb {
+  background: #dedfe2;
+  border: 1px solid #fff;
+}
+
+.MuiDataGrid-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #999ea6;
+}
+
+/* Editor Dialog */
+.MuiDialogContent-root::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.MuiDialogContent-root::-webkit-scrollbar-thumb {
+  background: #dedfe2;
+  border: 1px solid #fff;
+}
+
+.MuiDialogContent-root::-webkit-scrollbar-thumb:hover {
+  background: #999ea6;
+}
+
+.ExpressionEditor {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #999ea6;
+}
+
+/**** WorkspaceCanvas.css *****/
+
+.Workspace {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.Popout_Workspace {
+  height: 100%;
+  width: 100%;
+}
+
+.Workspace_Header_Tab_Draggable_Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.Workspace_Header {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 40px;
+}
+
+.Workspace_Header_Tab {
+  gap: 5px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(122, 122, 122);
+  padding-left: 7px;
+  flex-direction: row;
+  align-self: center;
+  border: 1px solid #87888c;
+  background-color: #fff;
+  height: 35px;
+  flex-shrink: 0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  padding-right: 5px;
+}
+
+.Workspace_Header_Tab > img {
+  margin-right: 0px;
+}
+
+.Workspace_Header_Tab button {
+  padding: 0px;
+  margin: 0;
+  width: auto;
+  min-width: auto;
+}
+
+.Workspace_Header_Tab_Label {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Workspace_Header_Tab_Draggable_Wrapper:focus,
+.Workspace_Header_Tab_Draggable_Wrapper:focus-visible,
+.Workspace_Header_Tab:focus,
+.Workspace_Header_Tab:focus-visible {
+  outline: none;
+}
+
+.Workspace_Header_Tab_Active {
+  color: #fff;
+  font-weight: bolder;
+  border: 1px solid #00457b;
+  background-color: #00457b;
+}
+
+.Workspace_Header_Tab .tabicon g,
+.Workspace_Header_Tab_Active .tabicon g {
+  scale: 0.25;
+  transform-origin: -2px -3px;
+}
+
+.MuiList-root .tabicon g {
+  scale: 0.25;
+  transform-origin: -2px -6px;
+}
+
+.Workspace_Header_Tab .tabicon g {
+  fill: #000;
+}
+
+.Workspace_Header_Tab_Active .tabicon g {
+  fill: #fff;
+}
+
+.Workspace_Header_Tab_Delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.Workspace_Header_Tab_Active .Workspace_Header_Tab_Delete {
+  border: 1px solid #87888c;
+}
+
+.Workspace_Header_Tab_Delete_Icon {
+  width: 14px;
+  height: 14px;
+  color: red;
+}
+
+.Workspace_Header_New {
+  margin-left: 5px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #92e2df;
+  max-width: 35px;
+  max-height: 40px;
+  padding-bottom: 5px;
+  align-self: center;
+}
+
+.Workspace_Header_New svg {
+  /* background-color: white; */
+  border-radius: 50%;
+  width: 25px;
+  /* border: 1px solid #dfe0e2; */
+}
+
+.Workspace_Canvas {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.5em;
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #00457b;
+}
+
+.Workspace_Canvas_Inner {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.5em;
+  border: 1px lightgray solid;
+  background-color: white;
+  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, lightgray 1px, transparent 1px),
+    linear-gradient(to bottom, lightgray 1px, transparent 1px);
+}
+
+.ResizeHandleOuter {
+  flex: 0 0 5px;
+  position: relative;
+  outline: none;
+}
+
+.ResizeHandleInner {
+  position: absolute;
+  top: 0em;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  border-radius: 0.25em;
+  transition: background-color 0.2s linear;
+}
+
+.ResizeHandleInner:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ShiftPressed .react-flow__node {
+  pointer-events: all !important;
+}
