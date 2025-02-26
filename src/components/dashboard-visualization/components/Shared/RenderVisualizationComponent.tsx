@@ -21,8 +21,8 @@ export const RenderVisualizationComponent = memo(
       >
         {props.show && !props.errorMessage ? (
           <>
-            <Box className={styles.VisualizationContainer}>
-              <Box className={styles.Container}>{props.children}</Box>
+            <Box className={`VisualizationContainer`}>
+              <Box className={`Container`}>{props.children}</Box>
             </Box>
           </>
         ) : (
