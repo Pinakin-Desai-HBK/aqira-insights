@@ -1,14 +1,14 @@
 import { CSSProperties } from "react";
 import NetworkIconSvg from "./tab-icon-network.svg";
-import VisualizationsPaletteIcon from "./palette-icon-visualiations.svg?react";
+import VisualizationsPaletteIcon from "./palette-icon-visualiations.svg";
 import CategoryIcon from "@mui/icons-material/Category";
-import SidebarAboutIcon from "./sidebar-icon-about.svg?react";
+import SidebarAboutIcon from "./sidebar-icon-about.svg";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import styles from "./Icon.module.css";
 import PythonIconSvg from "./python.svg";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { IconProps, TooltipIconProps } from "src/redux/types/ui/icon";
-import SidebarFeedbackIcon from "./sidebar-icon-feedback.svg?react";
+import SidebarFeedbackIcon from "./sidebar-icon-feedback.svg";
 import Tooltip from "@mui/material/Tooltip";
 import InsertDriveFile from "@mui/icons-material/InsertDriveFile";
 
@@ -21,10 +21,11 @@ export const NetworkIconInverted = (style: CSSProperties) => (
   <Icon src={NetworkIconSvg} style={style} inverted={true} />
 );
 
-export const DashboardIcon = (style: CSSProperties) => <div>DI</div>; //<VisualizationsPaletteIcon className="tabicon" style={style} />;
+export const DashboardIcon = (style: CSSProperties) => (
+  <Icon src={VisualizationsPaletteIcon} style={style} inverted={false} />
+);
 export const DashboardIconInverted = (style: CSSProperties) => (
-  // <VisualizationsPaletteIcon className="tabicon" style={style} />
-  <div>DII</div>
+  <Icon src={VisualizationsPaletteIcon} style={style} inverted={true} />
 );
 
 export const PythonIcon = (style: CSSProperties) => <Icon src={PythonIconSvg} style={style} inverted={false} />;
@@ -55,8 +56,7 @@ export const LogIcon = (
 
 export const AboutIcon = (
   <TooltipIcon title="About" tooltipPlacement={"right"}>
-    {/* <SidebarAboutIcon /> */}
-    <div>SAI</div>
+    <Icon src={SidebarAboutIcon} style={{}} inverted={true} />
   </TooltipIcon>
 );
 
@@ -74,7 +74,6 @@ export const HelpIcon = (
 
 export const FeedbackIcon = (
   <TooltipIcon title="Feedback" tooltipPlacement={"right"}>
-    {/* <SidebarFeedbackIcon /> */}
-    <div>SFI</div>
+    <Icon src={SidebarFeedbackIcon} style={{}} inverted={false} />
   </TooltipIcon>
 );
