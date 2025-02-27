@@ -1,6 +1,6 @@
 import { Component, ElementRef, inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { NgReact } from "../ng-context";
+import { NgReact } from "../react/ng-context";
 import App from "../react/App";
 
 @Component({
