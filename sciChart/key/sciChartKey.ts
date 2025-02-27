@@ -1,5 +1,5 @@
 import { DpiHelper, SciChart3DSurface, SciChartDefaults, SciChartSurface } from "scichart";
-import { getSciChartsLicenseUrl } from "src/react/helpers/get-url/get-url";
+import { getSciChartsLicenseUrl } from "src/insights/helpers/get-url/get-url";
 import { environment } from "../../src/environments/environment.development";
 
 DpiHelper.IsDpiScaleEnabled = false;
